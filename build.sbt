@@ -6,12 +6,12 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 scalaVersion := "2.11.7"
 
-libraryDependencies ++= Seq(
+libraryDependencies ++= Seq (
   javaJdbc,
   cache,
   javaWs
 )
-routesGenerator := InjectedRoutesGenerator
+  routesGenerator := InjectedRoutesGenerator
 
 enablePlugins(DebianPlugin)
 maintainer := “testvenu11 <testvenu11@outlook.com>“
