@@ -1,0 +1,44 @@
+New log file opened at Wed Jul 04 15:12:50 UTC 2018 by 2523@jenkins
+Taking next connection to: 40451
+New client attempting to connect on port: 35892-40451
+  Address = /127.0.1.1:40451
+This client on port 35892 has uuid 316ca39e-3849-42cb-bce5-25a6a9a61af6 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-316ca39e-3849-42cb-bce5-25a6a9a61af6
+Taking next connection to: 40451
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 40451
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 40451
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 40451
+New client attempting to connect on port: 36826-40451
+  Address = /127.0.1.1:40451
+Handshake exception on socket: 36826
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 40451
+New client attempting to connect on port: 36827-40451
+  Address = /127.0.1.1:40451
+This client on port 36827 has uuid 0bf07a6f-5489-4a12-ac3c-e76f3a8b313b configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-0bf07a6f-5489-4a12-ac3c-e76f3a8b313b
+Taking next connection to: 40451
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 2523@jenkins logs at Wed Jul 04 15:26:07 UTC 2018, goodbye.
